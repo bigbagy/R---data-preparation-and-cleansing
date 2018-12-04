@@ -1,5 +1,4 @@
 ---
-title: "Project 1: Explore and Prepare Data"
 output: html_notebook
 ---
 
