@@ -240,7 +240,7 @@ Find and remove all rows that a merge error occurred based on a mismatch between
 _Note: Do not remove the rows with `Gross == NA` at this point, just use this a guideline._
 
 ```{r}
-# TODO: Remove rows with Year/Date/Released mismatch
+#  Remove rows with Year/Date/Released mismatch
 rmlist<-NULL
 for (i in 1:length(df2$Title)){
   #step1. parsed Year, Date and Relaesed columns and get numeric value of years
@@ -262,7 +262,6 @@ for (i in 1:length(df2$Title)){
   else if (!(is.na(date) ||  is.na(year))){
     if (( (date+1) < year ) || ((date-1) > year) )
       rmlist<-c(rmlist,i)}
-#step3. record to-be-removed row numbers in "rmlist"", "rmlist"" contains list of rows to be removed
 
 }
 #step4. remove rows in dataframe according to "rmlist":
