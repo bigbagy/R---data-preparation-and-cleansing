@@ -59,8 +59,6 @@ df[[genre]] <- apply(df, 1, is_movie_of_genre, genre=genre)
 }
 
 
-
-
 ```
 
 This creates an object of the same name (`movies_merged`). For convenience, we copy it to `df` and start using it:
@@ -81,9 +79,6 @@ library(ggplot2)
 ```
 
 
-
-
-
 ## 1. Remove non-movie rows
 
 The variable `Type` captures whether the row is a movie, a TV series, or a game. Remove all rows from `df` that do not correspond to movies.
@@ -93,8 +88,6 @@ The variable `Type` captures whether the row is a movie, a TV series, or a game.
 df2 <- df[df$Type == "movie",]
 dim(df2)
 ```
-
-
 
 ## 2. Process `Runtime` column
 
@@ -145,18 +138,11 @@ Now investigate the distribution of `Runtime` values and how it changes over yea
 
 ggplot(df2,aes(x=as.numeric(as.character(Year)),y=as.numeric(as.character(Runtime)))) +geom_point()+scale_y_continuous(limits = c(0, 200))+coord_cartesian(ylim = c(0, 200)) 
 
-
-
 ggplot(df2,aes(x=Year,y=Budget))+geom_point()
 
 ggplot(df2,aes(x=Runtime,y=Budget))+geom_point()
 
 ```
-
-
-
-
-
 
 ## 3. Encode `Genre` column
 
