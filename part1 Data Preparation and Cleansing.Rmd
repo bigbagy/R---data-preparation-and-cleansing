@@ -2,7 +2,7 @@
 output: html_notebook
 ---
 
-_Note: This project involves getting data ready for analysis and doing some preliminary investigations. ._
+_Note: This script involves getting data ready for analysis and doing some preliminary investigations. ._
 
 # Data
 
