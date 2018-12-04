@@ -1,6 +1,5 @@
 ---
 title: "Project 1: Explore and Prepare Data"
-subtitle: "CSE6242 - Data and Visual Analytics - Fall 2017\n\nDue: Sunday, October 15, 2017 at 11:59 PM UTC-12:00 on T-Square"
 output: html_notebook
 ---
 
