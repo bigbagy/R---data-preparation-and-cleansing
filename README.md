@@ -1,7 +1,21 @@
 # R---data-preprocessing-and-cleansing-for-linear-model-training
 
 ### About the raw data   
+
 The raw data is obtained from file [`movies_merged`](https://s3.amazonaws.com/content.udacity-data.com/courses/gt-cs6242/project/movies_merged). The raw data contains a dataframe that has 40K rows and 39 columns. Each row represents a movie title and each column represents a descriptor such as `Title`, `Actors`, and `Budget`. The data was collected by querying IMDb’s API (see [www.omdbapi.com](http://www.omdbapi.com/)) and joining it with a separate dataset of movie budgets and gross earnings. The join key was the movie title. There are many missing data, un-standardized data format, and inconsistent data entries that needs to be cleaned before training model can be applied.
 
 ### Objective
-The goal is to investigate the relationship between the movie descriptors and the box office success of movies, as represented by the variable `Gross`. It can help a studio decide which titles to fund for production, how much to bid on produced movies, when to release a title, how much to invest in marketing and PR, etc. This information is most useful before a title is released, but it is still very valuable after the movie is already released to the public (for example it can affect additional marketing spend or how much a studio should negotiate with on-demand streaming companies for “second window” streaming rights).
+
+The end goal is to investigate the relationship between the movie descriptors and the box office success of movies, as represented by the target variable `Gross`. 
+
+A multivariate linear model will be used.  
+
+The first challenge is to clean and standardize the data.  A few problems with the raw data are identified and addressed below:
+
+The data has missing values, either as 0, (logical) NA or (string) "N.A."
+
+There are data inconsistencies, for example in movie release/debut/first premier may have different values
+
+There are data of non-standard formats, for example string format values in numeric columns
+
+There are features that are encoded as list of possible categories (such as movie genere), these categorical features can not fit into linear models and needs to be converted to series of numerical features (binaries), each binary feature will encode a movie genre (eg comedy column will be 1 if that movie belongs to comedy, thriller column will be 0 if movie is not thriller), the binary values can then be fit into linear models
