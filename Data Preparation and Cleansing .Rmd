@@ -12,8 +12,6 @@ A dataset that contains information about movies, including ratings, budget, gro
 
 The goal is to investigate the relationship between the movie descriptors and the box office success of movies, as represented by the variable `Gross`. It can help a studio decide which titles to fund for production, how much to bid on produced movies, when to release a title, how much to invest in marketing and PR, etc. This information is most useful before a title is released, but it is still very valuable after the movie is already released to the public (for example it can affect additional marketing spend or how much a studio should negotiate with on-demand streaming companies for “second window” streaming rights).
 
-# Instructions
-
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. Open this file in RStudio to get started.
 
 When you execute code within the notebook, the results appear beneath the code. Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
