@@ -1,4 +1,4 @@
-# R---data-preprocessing-and-cleansing-for-linear-model-training
+# R---data-preprocessing-and-cleansing
 
 ### About the raw data   
 
