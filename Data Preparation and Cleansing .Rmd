@@ -2,11 +2,11 @@
 output: html_notebook
 ---
 
-_Note: This script involves getting web-parsed data ready for analysis and doing some preliminary investigations. ._
+_Note: This script will process and cleanup web-parsed data for further analysis/modeling. ._
 
 # Data
 
-A dataset that contains information about movies, including ratings, budget, gross revenue and other attributes.
+The dataset contains feature columns including movie names, IMDB ratings, rotten tomato ratings, movie budget, actors, genre, story plot nand other attributes. There are many missing/invalid data, non-standard formats, inconsistent/duplicate data entries that needs to be processed 
 
 # Objective
 
